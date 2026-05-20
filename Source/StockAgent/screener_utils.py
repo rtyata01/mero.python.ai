@@ -10,7 +10,7 @@ from typing import List, Generator
 # -------------------- Configuration -------------------- #
 
 DATA_DIR = "data"
-DB_NAME = "stock-data-cache.db"
+DB_NAME = "stock_data_cache.db"
 DB_PATH = Path(__file__).resolve().parent / DATA_DIR / DB_NAME
 
 MAX_WORKERS = 10
