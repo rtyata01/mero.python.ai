@@ -1,0 +1,61 @@
+A typical ML pipeline moves data through several stages:
+
+Data Sources
+   ↓
+Ingestion
+   ↓
+Cleaning & Validation
+   ↓
+Transformation / Feature Engineering
+   ↓
+Storage
+   ↓
+Model Training
+   ↓
+Evaluation
+   ↓
+Deployment
+   ↓
+Monitoring & Feedback
+
+The Core ML Data Pipeline Techniques include 
+A. Batch Processing Pipelines, that Processes data periodically (hourly/daily).
+Best for:
+Historical analysis
+Recommendation systems
+Sales forecasting
+Fraud model retraining
+
+Example
+An e-commerce company trains a recommendation model every night.
+
+Pipeline:
+Orders DB → ETL Job → Feature Store → Model Training → Model Registry
+
+B. Streaming Pipelines, that Processes events continuously in real time.
+Best for:
+Fraud detection
+Real-time recommendations
+Predictive maintenance
+Monitoring systems
+
+Example
+Credit card fraud detection:
+Transaction Stream → Stream Processor → Online Features → Fraud Model → Alert
+
+C. ETL vs ELT Pipelines
+ETL (Extract → Transform → Load)
+Transforms data before storage.
+Source → Clean/Transform → Warehouse
+
+ELT (Extract → Load → Transform)
+Loads raw data first, transforms later.
+Source → Data Lake → Transform
+
+Modern ML systems prefer ELT because:
+Raw data is preserved
+Easier experimentation
+Better reproducibility
+
+Example
+App Logs → S3 Data Lake → Spark Transformations → ML Features

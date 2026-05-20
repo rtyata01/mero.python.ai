@@ -1,1 +1,1 @@
-# mero.ai
+# mero.python.ai
