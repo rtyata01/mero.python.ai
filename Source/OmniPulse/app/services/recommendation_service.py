@@ -44,6 +44,11 @@ class RecommendationService:
 
         similarities = []
 
+        # brute-force vector search, very slow for larger number of items like 100,000.
+        # load all movie items, one by one and then perform similarity vector search.
+
+        # alternative is to use FAISS for faster search
+        # Query Movie, Search vector index and return nearest neighbors instantly
         for item in items:
 
             item_embedding = np.array(
