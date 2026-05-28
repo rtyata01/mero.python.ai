@@ -11,3 +11,4 @@ scikit-learn
 sentence-transformers
 python-multipart
 pgvector
+pandas

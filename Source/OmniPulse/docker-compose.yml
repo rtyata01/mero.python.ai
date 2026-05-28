@@ -9,7 +9,7 @@ services:
       - redis
 
   postgres:
-    image: postgres:15
+    image: pgvector/pgvector:pg15
     environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: password

@@ -5,7 +5,6 @@ from app.models.item import Item
 from app.services.cache_service import CacheService
 
 class RecommendationService:
-
     def get_top_recommendations(self, items: list[Item], limit: int = 10):
         ranked_items = sorted(
             items,

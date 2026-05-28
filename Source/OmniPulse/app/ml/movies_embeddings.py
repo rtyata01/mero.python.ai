@@ -5,7 +5,7 @@ from app.database import SessionLocal
 from app.models.item import Item
 from app.ml.embeddings import generate_embedding
 
-def import_movies():
+def import_movies_embeddings():
     db = SessionLocal()
     existing_count = db.query(Item).count()
 
@@ -40,7 +40,6 @@ def import_movies():
 
         # Create DB object
         movie = Item(
-            id=int(row["Id"]),
             title=row["Title"],
             type=row["Type"],
             category=row["Category"],
