@@ -1,0 +1,10 @@
+[
+  {
+    "type": "Phishing",
+    "message": "Your bank account has been locked. Verify now."
+  },
+  {
+    "type": "Crypto Scam",
+    "message": "Invest today and earn guaranteed profits."
+  }
+]
