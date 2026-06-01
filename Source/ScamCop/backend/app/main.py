@@ -1,17 +1,9 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
-from app.services.scam_detector import analyze_message
+from app.api.analyze import router
 
-app = FastAPI(title="ScamShield AI")
+app = FastAPI(title='ScamCop')
+app.include_router(router)
 
-class ScamRequest(BaseModel):
-    message: str
-
-@app.get("/health")
-async def health():
-    return {"status": "ok"}
-
-@app.post("/analyze")
-async def analyze(req: ScamRequest):
-    result = analyze_message(req.message)
-    return result
+@app.get('/health')
+async def health(): 
+    return {'status':'ok'}

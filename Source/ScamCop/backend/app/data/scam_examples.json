@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "category": "Phishing",
+        "text": "Your bank account has been locked. Verify immediately."
+    },
+    {
+        "id": 2,
+        "category": "Crypto Scam",
+        "text": "Invest today and receive guaranteed returns."
+    },
+    {
+        "id": 3,
+        "category": "Tech Support Scam",
+        "text": "Microsoft detected a virus. Call support now."
+    }
+]
